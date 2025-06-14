@@ -1,0 +1,149 @@
+/* Base Styles */
+body {
+  font-family: 'Baloo 2', sans-serif;
+  background-color: #F5F9FA;
+  color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #023E8A;
+  color: #F5F9FA;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: #023E8A;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="30" cy="40" r="5" fill="%23F5F9FA" /><circle cx="70" cy="40" r="5" fill="%23F5F9FA" /><path d="M30 70 Q50 85 70 70" stroke="%23F5F9FA" fill="none" stroke-width="4" /></svg>');
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #F5F9FA;
+}
+
+.mood-selector {
+  margin-top: 1rem;
+}
+
+.mood-selector button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: #89B5C2;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+.content-box,
+.history-box,
+.favorite-box {
+  background-color: #9FC6E0;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#contentText {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.button-group {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.button-group button {
+  background-color: #89B5C2;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  margin: 0.25rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #7ca5b0;
+}
+
+.history-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history-box li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #F5F9FA;
+  color: #000000;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #023E8A;
+  color: #F5F9FA;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-group button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
