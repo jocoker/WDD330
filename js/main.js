@@ -25,7 +25,7 @@ async function fetchJoke() {
     const data = await res.json();
     const joke = `${data.setup} ${data.punchline}`;
     updateContent(joke);
-  } 
+  }
   catch (err) {
   console.error(err);
   updateContent('Failed to load a joke. Try again!');
@@ -37,7 +37,7 @@ async function fetchFact() {
     const res = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en');
     const data = await res.json();
     updateContent(data.text);
-  } 
+  }
   catch (err) {
   console.error(err);
   updateContent('Failed to load a fun fact.');
@@ -60,7 +60,7 @@ async function translateToYoda(text) {
 
     const data = await res.json();
     return data.contents.translated;
-  } 
+  }
   catch (err) {
   console.error(err);
   return 'Yoda translation failed.';
