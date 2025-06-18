@@ -115,7 +115,7 @@ document.getElementById('newBtn').addEventListener('click', async () => {
 document.getElementById('copyBtn').addEventListener('click', () => {
   const text = contentText.textContent;
   navigator.clipboard.writeText(text).then(() => {
-    alert('Copied to clipboard!');
+    alert('Copied to clipboard! Share Away!');
   });
 });
 
@@ -137,7 +137,7 @@ document.getElementById('translateBtn').addEventListener('click', async () => {
 document.getElementById('jokeMode').addEventListener('click', () => {
   mode = 'joke';
   userInputSection.classList.add('hidden');
-  updateContent('Click "New One" to get a joke.');
+  updateContent('Click the "Give Me A New One!" button below to get a joke.');
   renderHistory();
   renderFavorite();
 });
@@ -145,7 +145,7 @@ document.getElementById('jokeMode').addEventListener('click', () => {
 document.getElementById('factMode').addEventListener('click', () => {
   mode = 'fact';
   userInputSection.classList.add('hidden');
-  updateContent('Click "New One" to get a fun fact.');
+  updateContent('Click the "Give Me A New One!" button below to get a fun fact.');
   renderHistory();
   renderFavorite();
 });
@@ -153,13 +153,13 @@ document.getElementById('factMode').addEventListener('click', () => {
 document.getElementById('yodaMode').addEventListener('click', () => {
   mode = 'yoda';
   userInputSection.classList.remove('hidden');
-  updateContent('Type something below to Yoda-fy.');
+  updateContent('Type something below you must. Yoda-fy your sentence I will.');
   renderHistory();
   renderFavorite();
 });
 
 // --- Default on Load ---
 window.addEventListener('load', () => {
-  updateContent('Click a button to get started!');
+  updateContent('Click a button above to get started!');
   renderFavorite();
 });

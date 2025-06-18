@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Base Styles */
 body {
   font-family: 'Baloo 2', sans-serif;
@@ -37,6 +41,10 @@ h1 {
   color: #F5F9FA;
 }
 
+h2 {
+  text-align: center;
+}
+
 .mood-selector {
   margin-top: 1rem;
 }
@@ -60,7 +68,7 @@ main {
 .favorite-box {
   background-color: #9FC6E0;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -105,12 +113,33 @@ textarea {
   background-color: #7ca5b0;
 }
 
+#translateBtn {
+  background-color: #9FC6E0;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  margin: 0.25rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
 .history-box ul {
   list-style: none;
   padding: 0;
 }
 
 .history-box li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #F5F9FA;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.favorite-box p {
   margin: 0.5rem 0;
   padding: 0.5rem;
   background-color: #F5F9FA;
@@ -140,6 +169,10 @@ footer {
   textarea {
     font-size: 0.9rem;
   }
+  .history-box,
+  .favorite-box {
+    flex: 1 1 100%;
+  }
 }
 
 .container {
@@ -157,4 +190,16 @@ footer {
 .history-box,
 .favorite-box {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows them to stack on small screens */
+}
+
+.history-box,
+.favorite-box {
+  flex: 1 1 45%;
 }
