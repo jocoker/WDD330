@@ -145,7 +145,7 @@ document.getElementById('factMode').addEventListener('click', () => {
 document.getElementById('yodaMode').addEventListener('click', () => {
   mode = 'yoda';
   userInputSection.classList.remove('hidden');
-  updateContent('Type something above to Yoda-fy.');
+  updateContent('Type something below to Yoda-fy.');
   renderHistory();
   renderFavorite();
 });
