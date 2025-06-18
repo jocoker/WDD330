@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Funniest Guy in the Room</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script type="module" src="js/main.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Funniest Guy in the Room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="logo">
-            <div class="icon"></div>
-            <h1>The Funniest Guy in the Room</h1>
+                <div class="icon"></div>
+                <h1>The Funniest Guy in the Room</h1>
             </div>
             <div class="mood-selector">
-            <button id="jokeMode">Make Me Laugh</button>
-            <button id="factMode">Teach Me Something</button>
-            <button id="yodaMode">Speak Like Yoda</button>
+                <button id="jokeMode">Make Me Laugh</button>
+                <button id="factMode">Teach Me Something</button>
+                <button id="yodaMode">Speak Like Yoda</button>
             </div>
         </header>
 
         <main>
             <section class="content-box" id="displayArea">
-            <h2 id="contentText">Click a button to get started!</h2>
+                <h2 id="contentText">Click a button above to get started!</h2>
             </section>
 
             <div id="userInputSection" class="hidden">
-            <textarea id="userText" placeholder="Type something to Yoda-fy..."></textarea>
-            <button id="translateBtn">Translate to Yoda-Speak</button>
+                <textarea id="userText" placeholder="Type something to Yoda-fy..."></textarea>
+                <button id="translateBtn">Translate to Yoda-Speak</button>
             </div>
 
             <div class="button-group">
-            <button id="newBtn">New One</button>
-            <button id="copyBtn">Copy</button>
-            <button id="saveBtn">Save Favorite</button>
+                <button id="newBtn">New One</button>
+                <button id="copyBtn">Copy</button>
+                <button id="saveBtn">Save Favorite</button>
             </div>
 
             <section class="history-box">
-            <h2>Recent History</h2>
-            <ul id="historyList"></ul>
+                <h2>Recent History</h2>
+                <ul id="historyList"></ul>
             </section>
 
             <section class="favorite-box">
-            <h2>Saved Favorite</h2>
-            <p id="favoriteText">No favorite saved yet.</p>
+                <h2>Saved Favorite</h2>
+                <p id="favoriteText">No favorite saved yet.</p>
             </section>
         </main>
 
@@ -53,7 +55,8 @@
             <p>Made for the quiet heroes of the room.</p>
         </footer>
 
-        
+
     </div>
 </body>
+
 </html>
